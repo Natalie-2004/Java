@@ -7,6 +7,13 @@ public class Sum {
         // type variable name   class
         Scanner scanner = new Scanner(System.in);
         String line = scanner.nextLine();
+        // given that we know the users enter input 
+        // int num -> .nextInt
+        // double num -> .nextDouble
+        // bool -> .nextBoolean
+
+        // hasNext -> determine whether uses give input
+        // .hasNextLine(), .hasNextInt()... 
         String[] numbers = line.split(" ");
 
         int total = 0;
