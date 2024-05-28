@@ -17,6 +17,9 @@ relationship:
 
 ## Java Basic
   - 对象: 实例化一个类 class
+    -> always keep data private (local)
+    -> always initialize data
+    -> break up classes if too many responsibilities
 ``` 
 Circle c = new Circle
 ```
