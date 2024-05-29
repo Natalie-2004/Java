@@ -17,13 +17,14 @@ relationship:
 
 ## Java Basic
   - 对象: 实例化一个类 class
-    -> always keep data private (local)
-    -> always initialize data
-    -> break up classes if too many responsibilities
+      - always keep data private (local)
+      - always initialize data
+      - break up classes if too many responsibilities
+
 ``` 
 Circle c = new Circle
 ```
-  - 属性: attributes
+  - 属性: attributes 
 ```
 private double x;   // c.x = 2
 private double y;   // c.y = 5
