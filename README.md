@@ -20,7 +20,6 @@ relationship:
       - always keep data private (local)
       - always initialize data
       - break up classes if too many responsibilities
-
 ``` 
 Circle c = new Circle
 ```
@@ -37,3 +36,5 @@ public Circle(double x, double y, double radius) // same as the public class nam
   this.y = y;
   this.radius = radius;
 ```
+
+**all variables should be declared in private and access the certain variable via setter or changes certain variable with getter**
