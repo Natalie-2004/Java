@@ -38,3 +38,165 @@ public Circle(double x, double y, double radius) // same as the public class nam
 ```
 
 **all variables should be declared in private and access the certain variable via setter or changes certain variable with getter**
+
+### Week2
+## Polymorphism 多态
+- ability to process objects differently based on their data type or class
+- allows one **interface** to be used for a general class of actions 
+    - interface contain only constants, abstract by default methods(no bodies) and types.
+    - can have multi interfaces or sub-interfaces in a class -> allow inherit and extend methods from different sources
+
+```java
+// interfaces example 
+interface Animal {
+    void makeSound(); // abstract method
+}
+
+class Dog implements Animal {
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+}
+
+class Cat implements Animal {
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+        
+        dog.makeSound(); // Outputs: Woof
+        cat.makeSound(); // Outputs: Meow
+    }
+}
+```
+
+Key Q: the difference between abstract class and interface?
+**abstract class**
+- has both abstract and concrete method 
+- have instances variables 
+- have constructors
+- a class can only extend one abstract class
+```java
+abstract class Animal {
+    abstract void makeSound();
+
+    void sleep() {
+        System.out.println("Sleeping...");
+    }
+}
+
+class Dog extends Animal {
+    void makeSound() {
+        System.out.println("Woof");
+    }
+}
+```
+
+**interface**
+- only have abstract method
+- cannot have instance variables, only static/final
+- cannot have constructors
+- a class can implement multiple interfaces
+```java
+interface Animal {
+    void makeSound();
+}
+
+interface Pet {
+    void play();
+}
+
+class Dog implements Animal, Pet {
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+
+    public void play() {
+        System.out.println("Playing fetch");
+    }
+}
+```
+
+### Shadowing
+occurs when a subclass defines a variable with the same name as one in its superclass,
+and thus "shadowing" the superclass variable 
+
+```java
+class SuperClass {
+    int x = 5;
+}
+
+class SubClass extends SuperClass {
+    int x = 10;
+
+    void printX() {
+        System.out.println("x in SubClass: " + x); // x = 10
+        System.out.println("x in SuperClass: " + super.x); // x = 5
+    }
+}
+```
+
+### Method Overriding
+allows subclass to provide a specific implementation for a method that is already defined in its superclass. <h>
+the method in the subclass should have the same name, return type and parameters as in the superclass
+
+```java
+class Animal {
+    void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Woof");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.makeSound(); // Outputs: Woof
+    }
+}
+```
+
+### Method Forwarding
+where a method in a class calls another method, either within the same class or in another class
+
+```java
+class Helper {
+    void help() {
+        System.out.println("Helper is helping");
+    }
+}
+
+class MainClass {
+    Helper helper = new Helper();
+
+    void doWork() {
+        System.out.println("MainClass is doing work");
+        helper.help(); // Method forwarding
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MainClass mainClass = new MainClass();
+        mainClass.doWork();
+    }
+}
+// MainClass is working
+// Helper is helping
+```
+
+
+
+
+
