@@ -253,6 +253,32 @@ public class Main {
     - Runtime exceptions (ArrayIndexOutBoundsExceptions)
 <img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/d00a001d-6825-449c-bfac-382c080cdad2" alt="">
 
+<img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/3a7c2df2-d451-45f4-96f6-679ced80aec1" alt="#">
+
+#### Exceptions in inheritance
+if a subclass method _overrides_ a superclass method, a subclass's throws clause can contain a subset of a superclass's throws clause -> subclass can not throw more exceptions or differenet kind of exceptions
+
+## Assert
+- useful at checking preconditions, post-conditions, and control-flow invariants
+- **do not** use to check for argument in public methods and do any work that your application requires correct operation
+- does not result in side effects
+- assert: condition(if false prints error message) : error message
+- assertEquals
+- assertThrow
+- assertNotThrows
+
+### Generics in Java
+<br>
+Enables types (classes and interfaces) to be parameters when defining
+
+  - classes
+  - interfaces
+  - methods
+
+Benefits: 
+removes castings and offers stronger type checks at complie time <br/>
+allows implementations of generic algo, that work on collections of different types, can be customized, and are type safe <br/>
+adds stability to your code by making more of your bugs detectable at complie time 
 
 
 
