@@ -210,35 +210,19 @@ public class Main {
 - visually represents important domain concepts and relationships -> **UML** and **class diagrams**
 - help clarify and communicate during the design phase
 - domain models: conceptual models/domain object models
-<br>
+
 **Think**
 - "What are the features of the system to be and who requires these features?" -> external behaviour
 - "How elements of system-to-be interact to provide the external behaviour?" -> internal
-<br>
+
 - Entities / Objects
 - Relationships
 - Properties / fields / attributes
 - Actions / functionality -> is going to change the stage
-<br>
-Class Attributes (class variables) -> nouns <br>
-- The attribute’s name <br>
-- Its access modifier <br>
-    - `+` for public <br>
-    - `#` for protected <br>
-    - `-` for private <br>
-- Its type of the attribute <br>
-<br>
-Class Methods -> verbs
-- The method’s name
-- Its access modifier
-    - `+` for public
-    - `#` for protected
-    - `-` for private
-- Its return type
-- Its arguments and their types
-<br>
+
 **Relationship**
-![image](https://github.com/Natalie-2004/Java/assets/62165943/88c9f054-a04e-419c-be50-e33001704974)
+
+<img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/88c9f054-a04e-419c-be50-e33001704974" alt="#">
 
 - Inheritance: when one class (the child) "is a type of" another class (the parent). The child class inherits all features of the parent class and can also have its own additional features
 - Realization/Implementation: when a class implements an interface. The class must then implement the methods defined in the interface
