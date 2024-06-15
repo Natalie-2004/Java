@@ -220,7 +220,7 @@ public class Main {
 - Properties / fields / attributes
 - Actions / functionality -> is going to change the stage
 
-<img width="700 src="https://github.com/Natalie-2004/Java/assets/62165943/38ffe84e-82c2-4379-a8a2-b5102d9d5dcd" alt="#">
+<img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/38ffe84e-82c2-4379-a8a2-b5102d9d5dcd" alt="#">
 
 **Relationship**
 
