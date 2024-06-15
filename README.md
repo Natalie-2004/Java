@@ -215,20 +215,19 @@ public class Main {
 - "What are the features of the system to be and who requires these features?" -> external behaviour
 - "How elements of system-to-be interact to provide the external behaviour?" -> internal
 <br>
-
 - Entities / Objects
 - Relationships
 - Properties / fields / attributes
 - Actions / functionality -> is going to change the stage
 <br>
-Class Attributes (class variables) -> nouns
-- The attribute’s name
-- Its access modifier
-    - `+` for public
-    - `#` for protected
-    - `-` for private
-- Its type of the attribute
-
+Class Attributes (class variables) -> nouns <br>
+- The attribute’s name <br>
+- Its access modifier <br>
+    - `+` for public <br>
+    - `#` for protected <br>
+    - `-` for private <br>
+- Its type of the attribute <br>
+<br>
 Class Methods -> verbs
 - The method’s name
 - Its access modifier
