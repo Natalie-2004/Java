@@ -76,17 +76,19 @@ public class Main {
 ```
 
 ### Key Q: the difference between **normal class, abstract class and interface**?
+
 **normal class**
 - create instances using new keyword
 - can directly initialise class
-<br>
+
 **_abstract class_**
 - use 'extend'
 - has both abstract and concrete method 
 - can have instances variables 
 - can have constructors
 - a class can only extend one abstract class
-```java
+
+```
 abstract class Animal {
     abstract void makeSound();
 
@@ -109,7 +111,8 @@ class Dog extends Animal {
 - cannot have constructors
 - only define functions signatures
 - a class can implement multiple interfaces, but needed to follow all of its rules (like contract)
-```java
+
+```
 interface Animal {
     void makeSound();
 }
