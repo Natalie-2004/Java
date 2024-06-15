@@ -240,7 +240,7 @@ public class Main {
 - m..m
 
 ## Design by Contract
-<href src="https://nw-syd-gitlab.cseunsw.tech/COMP2511/24T2/content/-/blob/main/lecture-slides/week02/DesignByConstract.pdf" alt="#">
+[label](https://nw-syd-gitlab.cseunsw.tech/COMP2511/24T2/content/-/blob/main/lecture-slides/week02/DesignByConstract.pdf)
 
 
 
