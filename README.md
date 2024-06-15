@@ -1,6 +1,6 @@
 # COMP2511 Notes
 
-### Week1
+# Week1
 ## Inheritance 继承
   - creating new classes based on existing ones -> reuse the methods and fields of that class can reduce code repetition -> **complex tree structure**
   - **subclass (child)**
@@ -39,7 +39,7 @@ public Circle(double x, double y, double radius) // same as the public class nam
 
 **all variables should be declared in private and access the certain variable via setter or changes certain variable with getter**
 
-### Week2
+# Week2
 ## Polymorphism 多态
 - ability to process objects differently based on their data type or class
 - allows one **interface** to be used for a general class of actions 
@@ -240,8 +240,18 @@ public class Main {
 - m..m
 
 ## Design by Contract
-[label](https://nw-syd-gitlab.cseunsw.tech/COMP2511/24T2/content/-/blob/main/lecture-slides/week02/DesignByConstract.pdf)
+[pdf](https://nw-syd-gitlab.cseunsw.tech/COMP2511/24T2/content/-/blob/main/lecture-slides/week02/DesignByConstract.pdf)
 
+# Week3
+## Exceptions
+- An exception is an _event_, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions -> something has gone wrong 
+- **Throwing Exceptions**: when errors occur, an exception object is generated amd given to the runtime system -> putting all message inside
+- Checked Vs. Unchecked -> all classes that are Runtime/Error are unchecked; all classes inherit from Exception but not directly/indirectly from class Runtime are checked
+- There are three kinds:
+    - Checked exceptions (IOException, SQLException)
+    - Error (OutOfMemory)
+    - Runtime exceptions (ArrayIndexOutBoundsExceptions)
+<img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/d00a001d-6825-449c-bfac-382c080cdad2" alt="">
 
 
 
