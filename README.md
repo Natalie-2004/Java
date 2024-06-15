@@ -233,10 +233,13 @@ public class Main {
 - Aggregation: represents a special "has-a" relationship, but the component or instances can exist independently from the aggregate. Contain cardinality
 - Composition: represents a special "has-a" relationship, but the component or instances cannot exist independently from the composite (class or object). If the composite is destroyed, the component is also destroyed. Contain cardinality
 <br>
+
 Cardinality
+
 - 1..1
 - 1..m
 - m..m
+
 
 
 
