@@ -75,7 +75,8 @@ public class Main {
 }
 ```
 
-Key Q: the difference between **normal class, abstract class and interface**?
+### Key Q: the difference between **normal class, abstract class and interface**?
+<br>
 **normal class**
 - create instances using new keyword
 - can directly initialise class
