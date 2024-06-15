@@ -206,6 +206,52 @@ public class Main {
 // Helper is helping
 ```
 
+## Domain Models
+- visually represents important domain concepts and relationships -> **UML** and **class diagrams**
+- help clarify and communicate during the design phase
+- domain models: conceptual models/domain object models
+<br>
+**Think**
+- "What are the features of the system to be and who requires these features?" -> external behaviour
+- "How elements of system-to-be interact to provide the external behaviour?" -> internal
+<br>
+
+- Entities / Objects
+- Relationships
+- Properties / fields / attributes
+- Actions / functionality -> is going to change the stage
+<br>
+Class Attributes (class variables) -> nouns
+- The attribute’s name
+- Its access modifier
+    - `+` for public
+    - `#` for protected
+    - `-` for private
+- Its type of the attribute
+
+Class Methods -> verbs
+- The method’s name
+- Its access modifier
+    - `+` for public
+    - `#` for protected
+    - `-` for private
+- Its return type
+- Its arguments and their types
+<br>
+**Relationship**
+![image](https://github.com/Natalie-2004/Java/assets/62165943/88c9f054-a04e-419c-be50-e33001704974)
+
+- Inheritance: when one class (the child) "is a type of" another class (the parent). The child class inherits all features of the parent class and can also have its own additional features
+- Realization/Implementation: when a class implements an interface. The class must then implement the methods defined in the interface
+- Aggregation: represents a special "has-a" relationship, but the component can exist independently from the aggregate. Contain cardinality
+- Composition: represents a special "has-a" relationship, but the component cannot exist independently from the composite. If the composite is destroyed, the component is also destroyed.Contain cardinality
+- Association:  relationship between two classes that allows one object instance to cause another to perform an action on its behalf. This relationship is structural, because it specifies that objects of one kind are connected to objects of another and does not represent behaviour
+<br>
+Cardinality
+- 1..1
+- 1..m
+- m..m
+
 
 
 
