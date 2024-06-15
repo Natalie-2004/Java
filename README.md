@@ -258,19 +258,18 @@ public class Main {
 #### Exceptions in inheritance
 if a subclass method _overrides_ a superclass method, a subclass's throws clause can contain a subset of a superclass's throws clause -> subclass can not throw more exceptions or differenet kind of exceptions
 
-## Assert
+## Assertions
 - useful at checking preconditions, post-conditions, and control-flow invariants
 - **do not** use to check for argument in public methods and do any work that your application requires correct operation
 - does not result in side effects
 - assert: condition(if false prints error message) : error message
-- assertEquals
+- assertEquals: actual, expected
 - assertThrow
 - assertNotThrows
 
 ### Generics in Java
 <br>
 Enables types (classes and interfaces) to be parameters when defining
-
   - classes
   - interfaces
   - methods
@@ -278,9 +277,31 @@ Enables types (classes and interfaces) to be parameters when defining
 Benefits: 
 removes castings and offers stronger type checks at complie time <br/>
 allows implementations of generic algo, that work on collections of different types, can be customized, and are type safe <br/>
-adds stability to your code by making more of your bugs detectable at complie time 
+adds stability to your code by making more of your bugs detectable at complie time <br/>
+have multiple type parameters, i.e the genertic OrderedPair class which implements the generic Pair interface <br/>
+<img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/9db5acb0-a328-4829-ab81-b4d684f793e5" alt="#">
+<br/>
+**Generic Types**: generic class or interface that is parameterized over types
+**Generic Class**: define with the following format:
 
+```
+class name<T1, T2, ..., Tn> {/*...*/}
 
+i.e
+Box<Integer> integerBox = new Box<integer>()
+Box<Integer> integerBox = new Box<>()
+
+// multiple type parameters
+Pair<String, Integer>p1 = new OrderedPair<String, Integer>("Even", 8);
+Pair<String, String>p2 = new OrderedPair<String, String>("hello", "world")
+OR
+OrderPair<String, Integer>p1 = new OrderedPair<>("Even", 8);
+OrderPair<String, Stringr>p1 = new OrderedPair<>("hello", "world");
+// and more examples
+OrderPair<String, Box<Integer>>p = new OrderedPair<>("primes", new Box<Integer>(...))
+```
+
+**Generic Methods**: methods that introduce their own type parameters
 
 
 
