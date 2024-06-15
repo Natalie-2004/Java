@@ -220,10 +220,11 @@ public class Main {
 - Properties / fields / attributes
 - Actions / functionality -> is going to change the stage
 
+<img width="700> src="https://github.com/Natalie-2004/Java/assets/62165943/38ffe84e-82c2-4379-a8a2-b5102d9d5dcd" alt="3">
+
 **Relationship**
 
 <img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/88c9f054-a04e-419c-be50-e33001704974" alt="#">
-
 - Inheritance: when one class (the child) "is a type of" another class (the parent). The child class inherits all features of the parent class and can also have its own additional features
 - Realization/Implementation: when a class implements an interface. The class must then implement the methods defined in the interface
 - Aggregation: represents a special "has-a" relationship, but the component can exist independently from the aggregate. Contain cardinality
