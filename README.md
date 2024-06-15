@@ -234,11 +234,15 @@ public class Main {
 - Composition: represents a special "has-a" relationship, but the component or instances cannot exist independently from the composite (class or object). If the composite is destroyed, the component is also destroyed. Contain cardinality
 <br>
 
-Cardinality
-
+**Cardinality**
 - 1..1
 - 1..m
 - m..m
+
+## Design by Contract
+<href src="https://nw-syd-gitlab.cseunsw.tech/COMP2511/24T2/content/-/blob/main/lecture-slides/week02/DesignByConstract.pdf" alt="#">
+
+
 
 
 
