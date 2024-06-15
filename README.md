@@ -104,7 +104,7 @@ class Dog extends Animal {
 }
 ```
 
-**<<interface>>**
+**interface**
 - use 'implementation'
 - only have abstract method
 - cannot have instance, only static
