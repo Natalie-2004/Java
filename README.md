@@ -225,16 +225,20 @@ public class Main {
 **Relationship**
 
 <img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/88c9f054-a04e-419c-be50-e33001704974" alt="#">
+
+- (directed) Association:  a class "uses" another class. relationship is more like "has-a" between two classes that allows one object instance to cause another to perform an action on its behalf. i.e Hotel has Room, Owner has Car
 - Inheritance: when one class (the child) "is a type of" another class (the parent). The child class inherits all features of the parent class and can also have its own additional features
 - Realization/Implementation: when a class implements an interface. The class must then implement the methods defined in the interface
+- Dependency: loosest relationship. A depends on B in someway
 - Aggregation: represents a special "has-a" relationship, but the component can exist independently from the aggregate. Contain cardinality
 - Composition: represents a special "has-a" relationship, but the component cannot exist independently from the composite. If the composite is destroyed, the component is also destroyed.Contain cardinality
-- Association:  relationship between two classes that allows one object instance to cause another to perform an action on its behalf. This relationship is structural, because it specifies that objects of one kind are connected to objects of another and does not represent behaviour
 <br>
 Cardinality
 - 1..1
 - 1..m
 - m..m
+
+
 
 
 
