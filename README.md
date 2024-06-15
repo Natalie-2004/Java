@@ -215,7 +215,7 @@ public class Main {
 - "What are the features of the system to be and who requires these features?" -> external behaviour
 - "How elements of system-to-be interact to provide the external behaviour?" -> internal
 
-- Entities / Objects
+- Entities / Objects -> class can't represent directly by String/Number
 - Relationships
 - Properties / fields / attributes
 - Actions / functionality -> is going to change the stage
@@ -230,8 +230,8 @@ public class Main {
 - Inheritance: when one class (the child) "is a type of" another class (the parent). The child class inherits all features of the parent class and can also have its own additional features
 - Realization/Implementation: when a class implements an interface. The class must then implement the methods defined in the interface
 - Dependency: loosest relationship. A depends on B in someway
-- Aggregation: represents a special "has-a" relationship, but the component can exist independently from the aggregate. Contain cardinality
-- Composition: represents a special "has-a" relationship, but the component cannot exist independently from the composite. If the composite is destroyed, the component is also destroyed.Contain cardinality
+- Aggregation: represents a special "has-a" relationship, but the component or instances can exist independently from the aggregate. Contain cardinality
+- Composition: represents a special "has-a" relationship, but the component or instances cannot exist independently from the composite (class or object). If the composite is destroyed, the component is also destroyed. Contain cardinality
 <br>
 Cardinality
 - 1..1
