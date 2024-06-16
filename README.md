@@ -305,9 +305,8 @@ public class Box<T> {
         System.out.println(intBox.getContent()); // Output: 123
     }
 }
-```
-<br/>
-```
+
+// Define a generic interface with Key K and V value
 public interface Pair<K, V> {
     K getKey();
     V getValue();
@@ -338,6 +337,7 @@ public class OrderedPair<K, V> implements Pair<K, V> {
 ```
 
 **Generic Methods**: methods that introduce their own type parameters <br/>
+
 ```
 public class GenericMethodExample {
     // Define a generic method with a type parameter T
@@ -357,7 +357,7 @@ public class GenericMethodExample {
     }
 }
 ```
-<br/>
+
 ### Collections
 A framework that provides an architecture to store and manipulate _a group of objects_(elements). Collections means an object that groups multiple elements iinto a single unit
 <br/>
