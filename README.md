@@ -281,7 +281,7 @@ Adds stability to your code by making more of your bugs detectable at complie ti
 Have multiple type parameters, i.e the genertic OrderedPair class which implements the generic Pair interface <br/>
 <img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/9db5acb0-a328-4829-ab81-b4d684f793e5" alt="#">
 <br/>
-**Generic Types**: generic class or interface that is parameterized over types
+**Generic Types**: generic class or interface that is parameterized over types <br/>
 ```
 // Define a generic class with one type parameter T
 public class Box<T> {
@@ -306,6 +306,7 @@ public class Box<T> {
     }
 }
 ```
+<br/>
 ```
 public interface Pair<K, V> {
     K getKey();
@@ -335,8 +336,8 @@ public class OrderedPair<K, V> implements Pair<K, V> {
     }
 }
 ```
-<br/>
-**Generic Methods**: methods that introduce their own type parameters
+
+**Generic Methods**: methods that introduce their own type parameters <br/>
 ```
 public class GenericMethodExample {
     // Define a generic method with a type parameter T
@@ -356,7 +357,7 @@ public class GenericMethodExample {
     }
 }
 ```
-
+<br/>
 ### Collections
 A framework that provides an architecture to store and manipulate _a group of objects_(elements). Collections means an object that groups multiple elements iinto a single unit
 <br/>
