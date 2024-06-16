@@ -269,41 +269,107 @@ if a subclass method _overrides_ a superclass method, a subclass's throws clause
 
 ### Generics in Java
 <br>
-Enables types (classes and interfaces) to be parameters when defining
-  - classes
-  - interfaces
-  - methods
+Enables types (classes and interfaces) to be parameters when defining <br/>
+  - classes <br/>
+  - interfaces <br/>
+  - methods <br/>
 
 Benefits: 
-removes castings and offers stronger type checks at complie time <br/>
-allows implementations of generic algo, that work on collections of different types, can be customized, and are type safe <br/>
-adds stability to your code by making more of your bugs detectable at complie time <br/>
-have multiple type parameters, i.e the genertic OrderedPair class which implements the generic Pair interface <br/>
+Removes castings and offers stronger type checks at complie time <br/>
+Allows implementations of generic algo, that work on collections of different types, can be customized, and are type safe <br/>
+Adds stability to your code by making more of your bugs detectable at complie time <br/>
+Have multiple type parameters, i.e the genertic OrderedPair class which implements the generic Pair interface <br/>
 <img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/9db5acb0-a328-4829-ab81-b4d684f793e5" alt="#">
 <br/>
 **Generic Types**: generic class or interface that is parameterized over types
-**Generic Class**: define with the following format:
-
 ```
-class name<T1, T2, ..., Tn> {/*...*/}
+// Define a generic class with one type parameter T
+public class Box<T> {
+    private T content;
 
-i.e
-Box<Integer> integerBox = new Box<integer>()
-Box<Integer> integerBox = new Box<>()
+    public void setContent(T content) {
+        this.content = content;
+    }
 
-// multiple type parameters
-Pair<String, Integer>p1 = new OrderedPair<String, Integer>("Even", 8);
-Pair<String, String>p2 = new OrderedPair<String, String>("hello", "world")
-OR
-OrderPair<String, Integer>p1 = new OrderedPair<>("Even", 8);
-OrderPair<String, Stringr>p1 = new OrderedPair<>("hello", "world");
-// and more examples
-OrderPair<String, Box<Integer>>p = new OrderedPair<>("primes", new Box<Integer>(...))
+    public T getContent() {
+        return content;
+    }
+
+    public static void main(String[] args) {
+        Box<String> stringBox = new Box<>();
+        stringBox.setContent("Hello, Generics!");
+        System.out.println(stringBox.getContent()); // Output: Hello, Generics!
+
+        Box<Integer> intBox = new Box<>();
+        intBox.setContent(123);
+        System.out.println(intBox.getContent()); // Output: 123
+    }
+}
 ```
+```
+public interface Pair<K, V> {
+    K getKey();
+    V getValue();
+}
 
+public class OrderedPair<K, V> implements Pair<K, V> {
+    private K key;
+    private V value;
+
+    public OrderedPair(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public K getKey() {
+        return key;
+    }
+
+    public V getValue() {
+        return value;
+    }
+
+    public static void main(String[] args) {
+        Pair<String, Integer> pair = new OrderedPair<>("One", 1);
+        System.out.println("Key: " + pair.getKey() + ", Value: " + pair.getValue()); // Output: Key: One, Value: 1
+    }
+}
+```
+<br/>
 **Generic Methods**: methods that introduce their own type parameters
+```
+public class GenericMethodExample {
+    // Define a generic method with a type parameter T
+    public static <T> void printArray(T[] array) {
+        for (T element : array) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
+    }
 
+    public static void main(String[] args) {
+        Integer[] intArray = {1, 2, 3, 4, 5};
+        String[] strArray = {"A", "B", "C", "D", "E"};
 
+        printArray(intArray); // Output: 1 2 3 4 5 
+        printArray(strArray); // Output: A B C D E 
+    }
+}
+```
+
+### Collections
+A framework that provides an architecture to store and manipulate _a group of objects_(elements). Collections means an object that groups multiple elements iinto a single unit
+<br/>
+Java Collection Framework(JDK)
+- (Core) Interfaces: allow collections to be manipulated independently of the details of their representation.
+    - root interface in the collection hierarchy
+    - have constructor that takes a Collection argument
+    - main methods perform basic operations such as isEmpty(), size() etc
+    - more interface are extends Collections, i.e Queue Interface -> represents a collection designed for holding elements prior to processing
+- Implementations: concrete implementations of the collection interfaces
+    - purpose is to summarized these:
+    - <img width="550" src="https://github.com/Natalie-2004/Java/assets/62165943/2dfe4090-35e8-4f13-975f-bcd0dc59bad9" alt="#"> 
+- Algorithms: the methods that perform useful computations, such as searching and sorting -> also said to be _polymorphic_, same methods can be used on many different implementations of the approproate collection interfaces
 
 
 
