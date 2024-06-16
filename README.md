@@ -359,9 +359,10 @@ public class GenericMethodExample {
 ```
 
 ### Collections
-A framework that provides an architecture to store and manipulate _a group of objects_(elements). Collections means an object that groups multiple elements iinto a single unit
+A framework that provides an architecture to store and manipulate _a group of objects_(elements). Collections means an object that groups multiple elements iinto a single unit.
 <br/>
-Java Collection Framework(JDK)
+<br/>
+**Java Collection Framework(JDK)**
 - (Core) Interfaces: allow collections to be manipulated independently of the details of their representation.
     - root interface in the collection hierarchy
     - have constructor that takes a Collection argument
@@ -372,6 +373,6 @@ Java Collection Framework(JDK)
     - <img width="550" src="https://github.com/Natalie-2004/Java/assets/62165943/2dfe4090-35e8-4f13-975f-bcd0dc59bad9" alt="#"> 
 - Algorithms: the methods that perform useful computations, such as searching and sorting -> also said to be _polymorphic_, same methods can be used on many different implementations of the approproate collection interfaces
 
-
+**Note**: for implementations, there must comes with a method 'int compareTo(Obj other)'
 
 
