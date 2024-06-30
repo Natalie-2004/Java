@@ -361,6 +361,7 @@ public class GenericMethodExample {
 ### Collections
 A framework that provides an architecture to store and manipulate _a group of objects_(elements). Collections means an object that groups multiple elements iinto a single unit.
 <br/>
+It uses the design rule in which we keep the stuff require to change in one class, and those which don't need to change remains another class (sorting algo etc.)
 <br/>
 **Java Collection Framework(JDK)**
 - (Core) Interfaces: allow collections to be manipulated independently of the details of their representation.
@@ -375,4 +376,86 @@ A framework that provides an architecture to store and manipulate _a group of ob
 
 **Note**: for implementations, there must comes with a method 'int compareTo(Obj other)'
 
+### Anonymous class
+While local classes are class declarations, anonymous classes are expressions, which means that you define the class in another expression.
+<br/>
+Less useful when creating object of a particulcar class many times -> code repeat
+<br/>
+```
+ HelloWorld frenchGreeting = new HelloWorld() {
+            String name = "tout le monde";
+            // two methods implement the interface
+            public void greet() {
+                greetSomeone("tout le monde");
+            }
+            public void greetSomeone(String someone) {
+                name = someone;
+                System.out.println("Salut " + name);
+            }
+        };
+```
 
+### Lambda experssion
+Using '->' to simplify operation into one line, like => in js.
+
+### JUnit
+- a type of unit testing
+- useful for refactoring tasks
+- includes:
+  - test case -> java class contains test methods
+  - test method -> executes the test code, annotated with @Test, in a test case
+  - asserts -> assert or assert statements checks and expected statement versus the actual statements
+  - test suites -> collection of several test cases
+<br/>
+<img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/01226dbc-b214-4a9b-b387-bdd8790e37c0" alt="#">
+<br/>
+
+**Tips:**
+- @BeforeEach -> initialise test setting
+- @AfterEach -> clear test data
+- @TestFactory -> allow create multiple tests of type denamicTest, they return: Iterable/Collection/Stream (note beforeEach and afterEach are not called in this case)
+
+### Design Principles
+What's Good software design? <br/>
+- **loose coupling** -> allow components to be used and modified independently of each other (but not zero couple!)
+- **high cohesion** -> all code in methods work toegther to create same purpose, and methods and properties of a class work toegther to define purpose
+<br/>
+Design Smells:
+- Rigidity (program more difficult to change)
+- fragility (program break in many place with minor change)
+- Immobility (hard to reuse)
+- Viscosity (changes are easier to implement through 'hacks' over 'design preserving methods')
+- Opacity (module to be difficult to understand)
+- Needless complexity: keep it simple
+- Needless repetition: should not repeat everything
+<br/>
+**DO NOT USE DESIGN PRINCIPLE IF THE CODE DOESNT HAVE DESIGN SMELL**
+<br/> 
+**Single Responsibility**
+
+- have one responsibility over a single function
+<br/> 
+**Open-Closed Principle**
+
+- open for extension but close for modification -> add new stuff instead of modify old thing
+<br/> 
+**Law of Demeter**
+
+- class should interact as few classes as possible
+- only interact with friend isteand of fof: A.getObjectB().getObjectC().display() is violate
+<br/> 
+**Interface segregation principle**
+
+- split up massive interface into small ones so that reduces so called "dead code", the class is unlikely to implement methods it doesn't use at all
+<br/> 
+**Dependency Inversion Principle**
+
+- high level modules should not depend on low-level modules
+- both should depends on abstraction
+<br/> 
+**Liskov Substitution principle**
+
+- objects of superclass should be replace by with objects of its subclass without breaking the application
+- the subclass should inherit and do not change the properties that superclass had
+- i.e plane is not subclass of car, it can't drive on road
+<br/>
