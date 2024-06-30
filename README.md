@@ -429,7 +429,9 @@ Design Smells:
 - Needless complexity: keep it simple
 - Needless repetition: should not repeat everything
 <br/>
+
 **DO NOT USE DESIGN PRINCIPLE IF THE CODE DOESNT HAVE DESIGN SMELL**
+
 <br/>
 
 **Single Responsibility**
