@@ -419,7 +419,9 @@ Using '->' to simplify operation into one line, like => in js.
 What's Good software design? <br/>
 - **loose coupling** -> allow components to be used and modified independently of each other (but not zero couple!)
 - **high cohesion** -> all code in methods work toegther to create same purpose, and methods and properties of a class work toegther to define purpose
+
 <br/>
+
 Design Smells:
 - Rigidity (program more difficult to change)
 - fragility (program break in many place with minor change)
@@ -428,6 +430,7 @@ Design Smells:
 - Opacity (module to be difficult to understand)
 - Needless complexity: keep it simple
 - Needless repetition: should not repeat everything
+
 <br/>
 
 **DO NOT USE DESIGN PRINCIPLE IF THE CODE DOESNT HAVE DESIGN SMELL**
