@@ -430,29 +430,35 @@ Design Smells:
 - Needless repetition: should not repeat everything
 <br/>
 **DO NOT USE DESIGN PRINCIPLE IF THE CODE DOESNT HAVE DESIGN SMELL**
-<br/> 
+<br/>
+
 **Single Responsibility**
 
 - have one responsibility over a single function
-<br/> 
+<br/>
+
 **Open-Closed Principle**
 
 - open for extension but close for modification -> add new stuff instead of modify old thing
-<br/> 
+<br/>
+
 **Law of Demeter**
 
 - class should interact as few classes as possible
 - only interact with friend isteand of fof: A.getObjectB().getObjectC().display() is violate
-<br/> 
+<br/>
+
 **Interface segregation principle**
 
 - split up massive interface into small ones so that reduces so called "dead code", the class is unlikely to implement methods it doesn't use at all
-<br/> 
+<br/>
+
 **Dependency Inversion Principle**
 
 - high level modules should not depend on low-level modules
 - both should depends on abstraction
-<br/> 
+<br/>
+
 **Liskov Substitution principle**
 
 - objects of superclass should be replace by with objects of its subclass without breaking the application
