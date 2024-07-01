@@ -482,6 +482,7 @@ Tips for @Override:
 - if the super class method is public then the subclass class method cannot be protect or private
 - statics, constructors and attribute with final cannot be override
 
+# Week 4
 
 ### Refactor
 
@@ -493,3 +494,51 @@ Bad code Smell:
 - divergent change: one class is commonly changed in different ways for different reasons
 - shotgun surgery: make lot of different change to a lot of different classes
 
+Lec example: Rental
+
+<br/>
+
+### Lambda Expressions
+
+Benefits:
+- easily define anoymous methods
+- treat code as data, function as object
+- pass functionality as method argument
+- use to implement interface with only one abstract class -> function interface
+
+```
+public interface MuFunctionInterface A {
+    public int myCompute(int x, int y)
+}
+
+// component: comma-separated list of formal parameters; arrow; body 
+MyFunctionInterfaceA f1 = (x, y) -> x + y;
+
+public interfaceInterfaceC {
+    public double doSomething(int x)
+}
+
+MuFunctionInterfaceC f4 = x -> {
+    double y = 1.5 * x;
+    return y + 8.0;
+}
+```
+
+<br/>
+
+### Method Referencing
+
+Benefits:
+- reuse methods: treating methods as an instance of a functional interface
+- ClassName::methodName; ClassName::new -> constructor
+
+<br/>
+
+The function interface: interface with single abstract method <br/>
+This stored in .util.function package including labda expressions and method references <br/>
+
+Several function shapes:
+- Function (from T to R)
+- Consumer (T to void)
+- Predicate (T to boolean)
+- Supplier (R)
