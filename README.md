@@ -273,6 +273,8 @@ if a subclass method _overrides_ a superclass method, a subclass's throws clause
 - assertThrow
 - assertNotThrows
 
+<br/>
+
 ### Generics in Java
 <br>
 Enables types (classes and interfaces) to be parameters when defining <br/>
@@ -284,8 +286,13 @@ Benefits:
 Removes castings and offers stronger type checks at complie time <br/>
 Allows implementations of generic algo, that work on collections of different types, can be customized, and are type safe <br/>
 Adds stability to your code by making more of your bugs detectable at complie time <br/>
-Have multiple type parameters, i.e the genertic OrderedPair class which implements the generic Pair interface <br/>
+Have multiple type parameters, i.e the genertic OrderedPair class which implements the generic Pair interface
+<br/>
+
 <img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/9db5acb0-a328-4829-ab81-b4d684f793e5" alt="#">
+
+<img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/80889236-4921-4b95-a9bf-b5565deda6f8" alt="#">
+
 <br/>
 **Generic Types**: generic class or interface that is parameterized over types <br/>
 ```
