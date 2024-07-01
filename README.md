@@ -15,6 +15,12 @@ relationship:
   - is-a -> superclass should contains **common and general** info to all subclass
   - has-a -> combines/reference current class's object to create new class i.e a cube is not a line but it contains
 
+<br/>
+
+Tips: use inheritance (is-a) wisely, do not overuse it. Has-a relationship such as composition is more easy to control and maintain
+
+<br/>
+
 ## Java Basic
   - 对象: 实例化一个类 class
       - always keep data private (local)
@@ -152,8 +158,8 @@ class SubClass extends SuperClass {
 ```
 
 ### Method Overriding
-allows subclass to provide a specific implementation for a method that is already defined in its superclass. <h>
-the method in the subclass should have the same name, return type and parameters as in the superclass
+allows subclass to provide a specific implementation for a method that is already defined in its superclass. <br/>
+the method in the subclass should have the same name, return type and parameters as in the superclass <br/>
 
 ```java
 class Animal {
@@ -468,5 +474,22 @@ Design Smells:
 
 - objects of superclass should be replace by with objects of its subclass without breaking the application
 - the subclass should inherit and do not change the properties that superclass had
-- i.e plane is not subclass of car, it can't drive on road
+- i.e plane is not subclass of car, it can't drive on road; 3d map is not subclass of 3d, missing z-coordinate
 <br/>
+
+Tips for @Override:
+- argument list should be exactly the same as that of the overriden method
+- if the super class method is public then the subclass class method cannot be protect or private
+- statics, constructors and attribute with final cannot be override
+
+
+### Refactor
+
+Bad code Smell:
+- duplicated code in more than one place
+- long methods
+- large class
+- long parameter list
+- divergent change: one class is commonly changed in different ways for different reasons
+- shotgun surgery: make lot of different change to a lot of different classes
+
