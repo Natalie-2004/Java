@@ -294,7 +294,9 @@ Have multiple type parameters, i.e the genertic OrderedPair class which implemen
 <img width="700" src="https://github.com/Natalie-2004/Java/assets/62165943/80889236-4921-4b95-a9bf-b5565deda6f8" alt="#">
 
 <br/>
+
 **Generic Types**: generic class or interface that is parameterized over types <br/>
+
 ```
 // Define a generic class with one type parameter T
 public class Box<T> {
@@ -538,8 +540,6 @@ MuFunctionInterfaceC f4 = x -> {
 Benefits:
 - reuse methods: treating methods as an instance of a functional interface
 - ClassName::methodName; ClassName::new -> constructor
-
-<br/>
 
 The function interface: interface with single abstract method <br/>
 This stored in .util.function package including labda expressions and method references <br/>
