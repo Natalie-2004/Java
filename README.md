@@ -493,7 +493,7 @@ Tips for @Override:
 
 # Week 4
 
-### Refactor
+### Refactor Part 1
 
 Bad code Smell:
 - duplicated code in more than one place
@@ -504,6 +504,19 @@ Bad code Smell:
 - shotgun surgery: make lot of different change to a lot of different classes
 
 Lec example: Rental
+
+<br/>
+
+Ways to improvement:
+
+1. Extract methods
+2. Rename variable
+3. Move(Re-examine) method
+4. Replace conditional logic with polymorphism
+
+<br/>
+
+These techniques make code reusebale through **encapsulation(protect data and behaviour) and delegation(use an object of another class as an instance variable, and forward messages to the instance.)**
 
 <br/>
 
