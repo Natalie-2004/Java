@@ -628,10 +628,20 @@ Pros and Cons <br/>
 An object, named the subject/observable, maintains a list of its dependents (observers) and notifies them automatically of any state changes, usually by calling one of their methods. <br/>
 
 So subject and observers are loosely coupled. (cobservers can be add/remve at runtime) And they are one-to-many dependency.
-Also an object can be an observer and also be subject (double dispatch)
+Also an object can be an observer and also be subject (double dispatch) <br/>
 For example, button-event in web development -> nothing happen until user click on the button <br/>
 
 Event driven programming: only carry out a task if a particular event takes place, otherwise do nothing. <br/>
+
+Pull and Push Data: <br/>
+
+subject need to change data while notifying a change to the observers
+    - push data
+        - pass the changed data to its observers that must implement such methods for example -> update(data1, data2)
+    - pull data
+        - pass the reference to itself to its observers, and the observers need to get the required data from subject -> update(this)
+        - subject needs to provide the required access methods for its observers
+
 
 When to use it? <br/>
 
@@ -645,7 +655,9 @@ Pros and Cons <br/>
 - Communication: A subject can updates to all registered observers.
 
 <br/>
+
 - Unexpected Updates: Observers might be notified at unexpected times, which can lead to unpredictable behavior.
 - Memory Leaks: In some programming languages, there is a risk of memory leaks if observers are not properly unregistered.
 
+**Composite Pattern (Structural)**
 
