@@ -635,12 +635,14 @@ Event driven programming: only carry out a task if a particular event takes plac
 
 Pull and Push Data: <br/>
 
-subject need to change data while notifying a change to the observers
-    - push data
-        - pass the changed data to its observers that must implement such methods for example -> update(data1, data2)
-    - pull data
-        - pass the reference to itself to its observers, and the observers need to get the required data from subject -> update(this)
-        - subject needs to provide the required access methods for its observers
+subject need to change data while notifying a change to the observers <br/>
+
+- push data
+  - pass the changed data to its observers that must implement such methods for example -> update(data1, data2)
+
+- pull data
+  - pass the reference to itself to its observers, and the observers need to get the required data from subject -> update(this)
+  - subject needs to provide the required access methods for its observers
 
 
 When to use it? <br/>
