@@ -688,5 +688,16 @@ Components: A interface stores collection of children components -> either leaf 
 
 Composite: A class representing composite objects (subtree), operating on its children, and if require, collect the returning values and derives the required ans -> Group <br/>
 
+<br/>
+
+### Refactor Part 2
+
+In part 1, we mainly introduces low-level refactoring. Today we introduce how high-level refactoring works
+
+- is more important
+- plays with design patterns
+- change languaage idioms
+- improve optimization i.e time complexcity
+
 
 
