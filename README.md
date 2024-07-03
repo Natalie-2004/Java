@@ -620,3 +620,32 @@ Pros and Cons <br/>
 - State Transitions: The transitions between states can become complex if not managed properly.
 
 <br/>
+
+# Week 5
+
+**Observer Pattern (Behavioural)**
+
+An object, named the subject/observable, maintains a list of its dependents (observers) and notifies them automatically of any state changes, usually by calling one of their methods. <br/>
+
+So subject and observers are loosely coupled. (cobservers can be add/remve at runtime) And they are one-to-many dependency.
+Also an object can be an observer and also be subject (double dispatch)
+For example, button-event in web development -> nothing happen until user click on the button <br/>
+
+Event driven programming: only carry out a task if a particular event takes place, otherwise do nothing. <br/>
+
+When to use it? <br/>
+
+- When a one-to-many dependency between objects is required.
+- When changes to one object need to trigger updates to other objects.
+- When an object should be able to notify other objects without making assumptions about who these objects are.
+
+Pros and Cons <br/>
+- Loose Coupling: The subject and observers are loosely coupled. The subject doesn't need to know the details of the observers.
+- Flexibility: Observers can be added or removed at runtime.
+- Communication: A subject can updates to all registered observers.
+
+<br/>
+- Unexpected Updates: Observers might be notified at unexpected times, which can lead to unpredictable behavior.
+- Memory Leaks: In some programming languages, there is a risk of memory leaks if observers are not properly unregistered.
+
+
