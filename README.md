@@ -578,6 +578,7 @@ Pros and Cons <br/>
 - Elimination of Conditional Statements: Reduces the need for complex conditional logic.
 
 <br/>
+
 - Increased Number of Classes: As each strategy requires a separate class, this can lead to an increase in the number of classes in the system.
 - Client Awareness: The client must be aware of different strategies to select the appropriate one.
 
@@ -593,5 +594,29 @@ It must contains:
 - limited condition for each transition
 - its initial state
 
+<br/>
+
+**Key idea: the same event or input (stimulus) can result in different behaviors (actions) depending on the current state of the object. Traffic Light changes from Green -> Yellow -> Red using the same timer event(stimulus)**
+
 <img width="700" alt="Screenshot 2024-07-03 at 4 14 03 pm" src="https://github.com/Natalie-2004/Java/assets/62165943/cee9bcac-2ef4-4e22-b102-fd7888e861cd">
 
+More example, vending machines: dispense products when the proper combination of coins is deposited <br/>
+
+When to use it? <br/>
+
+- When an object's behavior depends on its state, and it must change its behavior at runtime depending on that state.
+- When state-specific behavior should be localized to the state objects themselves.
+- When the code has multiple conditional branches that depend on the object's state.
+
+Pros and Cons <br/>
+
+- Encapsulation of State-specific Behavior: Each state-specific behavior is encapsulated in its own class.
+- Simplifies Complex Conditionals: Reduces the need for complex conditional statements.
+- Encourages Single Responsibility Principle: Each state class handles one particular state-specific behavior.
+
+<br/>
+
+- Increased Number of Classes: As each state requires a separate class, this can lead to an increase in the number of classes in the system.
+- State Transitions: The transitions between states can become complex if not managed properly.
+
+<br/>
