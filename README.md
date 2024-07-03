@@ -549,3 +549,49 @@ Several function shapes:
 - Consumer (T to void)
 - Predicate (T to boolean)
 - Supplier (R)
+
+## Design Patterns
+
+Write code under the principles so that it become easy to maintain and represent a template for how to solve problem <br/>
+Also provide shared vocabularies, improve communications and documentaion
+
+- Creational
+- Structural
+- Behavioural 
+
+**Strategy Pattern (Behavioural)**
+
+Strategy lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
+For example, Sorting Algos
+<br/>
+
+When to use it? <br/>
+
+- When you have multiple algos for a specific task and you want to switch between them easily.
+- When you need to avoid using conditional statements to select different behaviors.
+- When a class has multiple behaviors that can be turned on or off based on runtime conditions.
+- When you want to avoid exposing complex, algorithm-specific data structures.
+
+Pros and Cons <br/>
+- Flexibility: Strategies can be changed dynamically at runtime.
+- Encapsulation: Each strategy encapsulates its algorithm, adhering to the Single Responsibility Principle.
+- Elimination of Conditional Statements: Reduces the need for complex conditional logic.
+
+<br/>
+- Increased Number of Classes: As each strategy requires a separate class, this can lead to an increase in the number of classes in the system.
+- Client Awareness: The client must be aware of different strategies to select the appropriate one.
+
+<br/>
+
+**State Pattern (Behavioural)**
+
+State lets an object alter its behavior when its internal state changes. It appears as if the object changed its class. <br/>
+
+Finite State Machine: an abstract method which can change from one state to another state in response to some external inputs (transition).  
+It must contains:
+- a list of its states
+- limited condition for each transition
+- its initial state
+
+<img width="700" alt="Screenshot 2024-07-03 at 4 14 03 pm" src="https://github.com/Natalie-2004/Java/assets/62165943/cee9bcac-2ef4-4e22-b102-fd7888e861cd">
+
