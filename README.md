@@ -663,3 +663,17 @@ Pros and Cons <br/>
 
 **Composite Pattern (Structural)**
 
+Compose objects into tree structures to represent part-whole hierarchies. This pattern lets clients ignore differences between individual objects and compositions of objects. <br/>
+
+Motivation and Intent: mainipulate a single instance of the object just as we would manipulate a group of them, such that no discrimination between them <br/>
+
+Component Object: An abstract class or interface that declares the interface for objects in the composition <br/>
+
+Leaf: A class representing leaf objects, operating directly on the object -> Single <br/>
+
+Components: A interface stores collection of children components -> either leaf and/or composite <br/>
+
+Composite: A class representing composite objects (subtree), operating on its children, and if require, collect the returning values and derives the required ans -> Group <br/>
+
+
+
