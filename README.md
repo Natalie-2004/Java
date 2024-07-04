@@ -699,5 +699,13 @@ In part 1, we mainly introduces low-level refactoring. Today we introduce how hi
 - change languaage idioms
 - improve optimization i.e time complexcity
 
+<br/>
+
+Code smell: structure, complex logic and conditional statements, large method </br>
+
+Design smell: class level abstractions, class with multi responsibilities <br/>
+
+To fix long method <br/>
+
 
 
