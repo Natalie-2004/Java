@@ -1,4 +1,4 @@
-package statePattern;
+package state;
 
 class IdleState implements PrinterState {
     @Override

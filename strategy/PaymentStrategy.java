@@ -1,4 +1,4 @@
-package strategyPattern;
+package strategy;
 
 interface PaymentStrategy {
     void processPayment();

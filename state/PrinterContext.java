@@ -1,4 +1,4 @@
-package statePattern;
+package state;
 
 public class PrinterContext {
     private PrinterState state;

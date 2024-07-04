@@ -1,4 +1,4 @@
-package strategyPattern;
+package strategy;
 
 // public class Payment {
 //     public void processPayment(String type) {

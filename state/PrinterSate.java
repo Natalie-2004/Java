@@ -1,4 +1,4 @@
-package statePattern;
+package state;
 
 interface PrinterState {
     void print(PrinterContext context);

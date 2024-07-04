@@ -1,4 +1,4 @@
-package statePattern;
+package state;
 
 public class Printer {
 

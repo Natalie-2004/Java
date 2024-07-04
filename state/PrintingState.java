@@ -1,14 +1,15 @@
-package statePattern;
+package state;
 
-class ErrorState implements PrinterState {
+class PrintingState implements PrinterState {
     @Override
     public void print(PrinterContext context) {
-        System.out.println("Cannot print. Printer is in error state.");
+        System.out.println("Already printing...");
     }
 
     @Override
     public void error(PrinterContext context) {
-        System.out.println("Printer is already in error state.");
+        context.setState(new ErrorState());
+        System.out.println("Printer is in error state.");
     }
 
     @Override
