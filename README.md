@@ -665,6 +665,7 @@ When to use it? <br/>
 - When an object should be able to notify other objects without making assumptions about who these objects are.
 
 Pros and Cons <br/>
+
 - Loose Coupling: The subject and observers are loosely coupled. The subject doesn't need to know the details of the observers.
 - Flexibility: Observers can be added or removed at runtime.
 - Communication: A subject can updates to all registered observers.
@@ -705,7 +706,59 @@ Code smell: structure, complex logic and conditional statements, large method </
 
 Design smell: class level abstractions, class with multi responsibilities <br/>
 
-To fix long method <br/>
+Specific tech:
 
+- Extract Method: Creating new methods from parts of larger methods
+- Introduce Parameter Object: Consolidating groups of parameters into a single object
+- Replace Temp with Query: Moving expressions to methods to avoid temporary variables (not a common way)
+- Extract Class: Creating new classes from existing ones to improve cohesion
+- Move Method: Shifting methods to more appropriate classes
 
+<br/>
 
+Common code smell and solution:
+
+- Long Method: Extracting parts of the method to reduce length
+- Large Class: Using Extract Class or Extract Sub-Class to split responsibilities
+- **Long Parameter List**: Consolidating parameters into objects (Encapsulate these parameters into a single object, and then this object in this new parameter)
+- Duplicate Code: Using Extract Method or Pull Up Field to consolidate duplicate code
+- Feature Envy (frequently access the data or methods of another class): Relocate methods to the classes they primarily interact with
+- Divergent Change and Shotgun Surgery: Grouping related changes together to minimize widespread modifications
+- Data Classes: Adding behavior to classes that only store data
+- Lazy Classes: Removing classes that do not add significant value
+- Switch Statements: Replacing with polymorphic solutions using like the Strategy Pattern
+
+<br/>
+
+**Factory Method (Creational)**
+
+Defines an interface for creating an object but allows subclasses to alter the type of objects that will be created. It focuses on a single product. It provides a way to delegate the instantiation of derived classes to subclasses <br/>
+
+When to use it? <br/>
+
+- When a class cannot anticipate the class of objects it needs to create: If the class does not know in advance the exact types and dependencies of the objects it needs to create.
+- When a class wants its subclasses to specify the objects it creates: The superclass delegates the responsibility of creating an object to its subclasses.
+- When you want to localize the knowledge of which class is instantiated: The client code does not need to know the exact class of the object it creates.
+
+Pros and Cons <br/>
+
+- Single Responsibility Principle: Factory Method encapsulates the code for object creation.
+- Open/Closed Principle: You can introduce new types of products without changing the creator code.
+- Flexibility: The client code can work with any concrete product by interacting with the product interface.
+
+<br/>
+
+- Subclassing: Requires creating a subclass for each type of product.
+
+<br/>
+
+**Abstract Factory Method (Creational)**
+
+Provides an interface for creating families of related or dependent objects without specifying their concrete classes. Key point is focus on families of related products. It provides a way to encapsulate a group of individual factories that share a common idea <br/>
+
+When to use it? <br/>
+
+- Used when a system needs to be independent of how its objects are created, composed, and represented
+- when a system needs to support multiple families of products.
+
+<br/>
