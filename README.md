@@ -762,3 +762,10 @@ When to use it? <br/>
 - when a system needs to support multiple families of products.
 
 <br/>
+
+
+# Week 7
+
+**Template Pattern**
+
+
