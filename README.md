@@ -738,21 +738,24 @@ Common code smell and solution:
 
 Defines an interface for creating an object but allows subclasses to alter the type of objects that will be created. It focuses on a single product. It provides a way to delegate the instantiation of derived classes to subclasses <br/>
 
+In the factory pattern, we do not expose the creation logic to client when creating object, and we use common interface to point to the newly created bject <br/>
+
 When to use it? <br/>
 
 - When a class cannot anticipate the class of objects it needs to create: If the class does not know in advance the exact types and dependencies of the objects it needs to create.
 - When a class wants its subclasses to specify the objects it creates: The superclass delegates the responsibility of creating an object to its subclasses.
-- When you want to localize the knowledge of which class is instantiated: The client code does not need to know the exact class of the object it creates.
+- When you need to create complicated object
 
 Pros and Cons <br/>
 
 - Single Responsibility Principle: Factory Method encapsulates the code for object creation.
-- Open/Closed Principle: You can introduce new types of products without changing the creator code.
-- Flexibility: The client code can work with any concrete product by interacting with the product interface.
+- Open/Closed Principle: You can introduce new types of products without changing the creator code -> high extension
+- When caller want to create an object, he only require to know the name
+- Hide the product discrete implementation, caller only need to care about product's interface
 
 <br/>
 
-- Subclassing: Requires creating a subclass for each type of product.
+- Subclassing: Requires creating a subclass for each type of product -> increase system complexity
 
 <br/>
 
