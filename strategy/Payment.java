@@ -22,6 +22,7 @@ package strategy;
 // then, implement concrete strategies for each payment method
 // at last, modify this class to adapt strategy
 
+// step 3: create class that create new interface and hold a class to execute
 public class Payment {
     private PaymentStrategy strategy;
 

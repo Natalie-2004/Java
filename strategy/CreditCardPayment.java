@@ -1,5 +1,6 @@
 package strategy;
 
+// step 2: create concrete method
 public class CreditCardPayment implements PaymentStrategy{
     @Override
     public void processPayment() {
