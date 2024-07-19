@@ -578,16 +578,17 @@ Also provide shared vocabularies, improve communications and documentaion
 
 **Strategy Pattern (Behavioural)**
 
-Strategy lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
+Strategy lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable (互相替换).
 For example, Sorting Algos
 <br/>
+
+Key: implement concrete algorithms via the same interface <br/>
 
 When to use it? <br/>
 
 - When you have multiple algos for a specific task and you want to switch between them easily.
-- When you need to avoid using conditional statements to select different behaviors.
+- When you need to avoid bunch of conditional statements that executing similar algos
 - When a class has multiple behaviors that can be turned on or off based on runtime conditions.
-- When you want to avoid exposing complex, algorithm-specific data structures.
 
 Pros and Cons <br/>
 - Flexibility: Strategies can be changed dynamically at runtime.
@@ -598,6 +599,7 @@ Pros and Cons <br/>
 
 - Increased Number of Classes: As each strategy requires a separate class, this can lead to an increase in the number of classes in the system.
 - Client Awareness: The client must be aware of different strategies to select the appropriate one.
+- All strategy classes are exposed to outside
 
 <br/>
 
