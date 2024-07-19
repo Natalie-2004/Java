@@ -1,5 +1,9 @@
 # COMP2511 Notes
 
+OOP principles: encapsulation, abstraction, inheritance, polymorphism
+
+**Side Note: Porgram to an interface not an implementation (对接口编程而不是对实现编程); Favor object composition over inheritance (优先使用对象组合而不是继承)**
+
 # Week1
 ## Inheritance 继承
   - creating new classes based on existing ones -> reuse the methods and fields of that class can reduce code repetition -> **complex tree structure**
@@ -768,4 +772,33 @@ When to use it? <br/>
 
 **Template Pattern**
 
+**Singleton Pattern (Creational)**
 
+One of the simplest pattern in design patterns, it involves a single class responsible for creating its own object while ensuring that only one instance of the object is created.
+This class provides a way to access its only instance without needing to instantiate the class. <br/>
+
+Note:
+
+- singleton can only have one instance and must self create own's instance
+- singleton must provide this instance to other object
+
+<br/>
+
+When to use it? <br/>
+
+- This is useful when exactly one object is needed to coordinate actions across the system.
+- Control the number of instances
+- Gobally used class request frequent create and/or destroy
+
+Pros and Cons <br/>
+
+- In memory there's only one instance, saving memory particularly frequent create and/or destroy
+- avoid multi-occupied to memory
+
+<br/>
+
+- no interface
+- can't inheritance
+- avoid with single responsibility principle: a class should only focus on inner-logic, and not care how to do instantiate outside
+
+<br/>
