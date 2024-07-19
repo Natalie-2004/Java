@@ -1,4 +1,4 @@
-package factory;
+package factory.document;
 
 abstract class DocumentCreator {
     public abstract Document createDocument();

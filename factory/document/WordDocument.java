@@ -1,4 +1,4 @@
-package factory;
+package factory.document;
 
 public class WordDocument implements Document {
     @Override

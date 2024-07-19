@@ -1,4 +1,4 @@
-package factory;
+package factory.document;
 
 class PDFDocumentCreator extends DocumentCreator {
     @Override

@@ -1,4 +1,4 @@
-package factory;
+package factory.document;
 
 public class PDFDocument implements Document {
     @Override

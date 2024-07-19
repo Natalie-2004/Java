@@ -1,4 +1,4 @@
-package factory;
+package factory.document;
 
 // public class Main {
 //     public static void main(String[] args) {

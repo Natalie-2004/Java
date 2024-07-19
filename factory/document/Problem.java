@@ -1,4 +1,4 @@
-package factory;
+package factory.document;
 
 // public class Document {
 //     public void open(String type) {
