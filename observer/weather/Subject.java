@@ -1,4 +1,4 @@
-package observer;
+package observer.weather;
 
 interface Subject {
     void registerObserver(Observer o);

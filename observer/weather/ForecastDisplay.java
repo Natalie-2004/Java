@@ -1,4 +1,4 @@
-package observer;
+package observer.weather;
 
 class ForecastDisplay implements Observer {
     private float pressure;
