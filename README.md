@@ -574,7 +574,11 @@ Also provide shared vocabularies, improve communications and documentaion
 
 - Creational
 - Structural
-- Behavioural 
+- Behavioural
+
+<br/>
+
+## Behavioural Pattern
 
 **Strategy Pattern (Behavioural)**
 
@@ -644,9 +648,18 @@ Pros and Cons <br/>
 
 **Observer Pattern (Behavioural)**
 
-An object, named the subject/observable, maintains a list of its dependents (observers) and notifies them automatically of any state changes, usually by calling one of their methods. <br/>
+Objects that have some noteworthy states(event) are referred as **subject.** Since they notify other objects of their own state changes, aka. **publisher.**
+All objects that wish to be notified of the publisher's state changes are called **subscribers, or objects.**
 
-So subject and observers are loosely coupled. (cobservers can be add/remve at runtime) And they are one-to-many dependency.
+The observer pattern suggests that you add a subscription mechanism for publisher-like objects so that each object can subscribe or unsubscribe to the publisher's event stream. 
+In fact this mechanism includes:
+
+1. A list of subscribers used to store the references of subscriber objects
+2. Several public methods used to add or remove subscribers from the list, i.e add, remove/delete...
+
+<br/>
+
+So subject and objects are loosely coupled. (objects, the observers can be add/remove at runtime) And they are one-to-many dependency.
 Also an object can be an observer and also be subject (double dispatch) <br/>
 For example, button-event in web development -> nothing happen until user click on the button <br/>
 
