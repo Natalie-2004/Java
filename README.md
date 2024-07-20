@@ -686,7 +686,7 @@ When to use it? <br/>
 Pros and Cons <br/>
 
 - Loose Coupling: The subject and observers are loosely coupled. The subject doesn't need to know the details of the observers.
-- Flexibility: Observers can be added or removed at runtime.
+- Open-closed principle: Observers can be added or removed at runtime.
 - Communication: A subject can updates to all registered observers.
 
 <br/>
