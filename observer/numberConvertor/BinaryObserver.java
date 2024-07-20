@@ -1,7 +1,8 @@
-package observer.binocthex;
+package observer.numberConvertor;
 
 // step 3: create observer instance
 public class BinaryObserver extends Observer {
+    public Subject subject;
     public BinaryObserver(Subject subject) {
         this.subject = subject;
         this.subject.attach(this);

@@ -1,4 +1,4 @@
-package observer.binocthex;
+package observer.numberConvertor;
 
 // use subject and instance observer object
 public class ObserverPatternDemo {

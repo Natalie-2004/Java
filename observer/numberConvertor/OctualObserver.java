@@ -1,6 +1,7 @@
-package observer.binocthex;
+package observer.numberConvertor;
 
 public class OctualObserver extends Observer {
+    public Subject subject;
     public OctualObserver(Subject subject) {
         this.subject = subject;
         this.subject.attach(this);
@@ -9,7 +10,7 @@ public class OctualObserver extends Observer {
     @Override
     public void update() {
         System.out.println("Octual String: "
-        + Integer.toBinaryString(subject.getState())
+        + Integer.toOctalString(subject.getState())
         );
     }
 }

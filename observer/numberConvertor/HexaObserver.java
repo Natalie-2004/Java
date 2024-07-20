@@ -1,6 +1,7 @@
-package observer.binocthex;
+package observer.numberConvertor;
 
 public class HexaObserver extends Observer {
+    public Subject subject;
     public HexaObserver(Subject subject) {
         this.subject = subject;
         this.subject.attach(this);
@@ -9,7 +10,7 @@ public class HexaObserver extends Observer {
     @Override
     public void update() {
         System.out.println("Hexa String: "
-        + Integer.toBinaryString(subject.getState())
+        + Integer.toHexString(subject.getState())
         );
     }
 }
