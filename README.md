@@ -820,3 +820,35 @@ Pros and Cons <br/>
 - avoid with single responsibility principle: a class should only focus on inner-logic, and not care how to do instantiate outside
 
 <br/>
+
+
+# Week 8
+
+**Visitor Pattern (Behavioural)**
+
+Visitor is a behavioral design pattern that lets you separate algorithms from the objects on which they operate, so that making adding new operation more easier without modifying the algo itself. <br/>
+
+**Note: when calling methods in Visitor Class, we can't use polymorphism since the method signature are not the same (i.e industry is a child of city and their execute method are the same name, polymorphism doesn't work). You can't use method overloading either since input argument has inheritance relationship.**
+
+**Instead, we introduce double dispatch.**
+
+#### Double Dispatch
+
+A technique that allow to achieve polymorphic-like behavior based on the runtime types of two objects.
+
+When to use it? <br/>
+
+- When you need to perform many different and unrelated operations on objects in an object structure, especially these operations need to avoid "polluting" the object class itself.
+
+Pros and Cons <br/>
+
+- Open and Close principle: add new behaviours on different objects, without any modification
+- Single Responsibility Principle
+- Visistor object can collect useful info via interacting with other objects. i.e when you want to iterate some complex object algos, i.e object tree
+
+<br/>
+
+- When adding or remove an element, you need to update all visitor
+- When the visitor asking for particular element, they may not have the entitlment to ask the element's private variable and method -> need to provide getter and setter
+
+
