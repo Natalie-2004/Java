@@ -828,13 +828,16 @@ Pros and Cons <br/>
 
 Visitor is a behavioral design pattern that lets you separate algorithms from the objects on which they operate, so that making adding new operation more easier without modifying the algo itself. <br/>
 
-**Note: when calling methods in Visitor Class, we can't use polymorphism since input argument have inheritance relationship -> polymorphism is dealling with Earlt/Static Binding. You can't use method overloading either since input argument has inheritance relationship.**
+**Note: when calling methods in Visitor Class, polymorphism has limitation since input argument have inheritance relationship -> polymorphism is dealling with Earlt/Static Binding, it resolves to the correct method based on the actual type of the object. You can't use method overloading either since input argument has inheritance relationship.**
 
 **Instead, we introduce double dispatch.**
 
 #### Double Dispatch
 
-A technique that allow to achieve polymorphic-like behavior based on the runtime types of two objects.
+A technique that allow to achieve polymorphic-like behavior based on the runtime types of two objects. It resolves polymorphism's limitation by using two method calls to determine the operation based on the runtime types of both element and the visitor. 
+
+1. First Dispatch -> accept method: The first method call is on the element, passing the visitor as an argument. This call is resolved based on the runtime type of the element.
+2. Second Dispatch -> visitor's visit method: the accept method then calls the visitor's 'visit' method, passing itself as an argument. This call is resolved based on the runtime type of the visitor and the element.
 
 When to use it? <br/>
 
