@@ -828,7 +828,7 @@ Pros and Cons <br/>
 
 Visitor is a behavioral design pattern that lets you separate algorithms from the objects on which they operate, so that making adding new operation more easier without modifying the algo itself. <br/>
 
-**Note: when calling methods in Visitor Class, we can't use polymorphism since the method signature are not the same (i.e industry is a child of city and their execute method are the same name, polymorphism doesn't work). You can't use method overloading either since input argument has inheritance relationship.**
+**Note: when calling methods in Visitor Class, we can't use polymorphism since input argument have inheritance relationship -> polymorphism is dealling with Earlt/Static Binding. You can't use method overloading either since input argument has inheritance relationship.**
 
 **Instead, we introduce double dispatch.**
 
@@ -850,5 +850,7 @@ Pros and Cons <br/>
 
 - When adding or remove an element, you need to update all visitor
 - When the visitor asking for particular element, they may not have the entitlment to ask the element's private variable and method -> need to provide getter and setter
+- Violate Dependency Inversion Principle: rely on concrete class and no rely on the abstract
+- Violtae Law of Diameter: passing 'this' as an argument
 
 
