@@ -21,6 +21,12 @@ public class Contact {
         this.emailAddress = emailAddress;
     }
 
+    // using rumtime polyphrism to override the defualt object functionality
+    @Override
+    public String toString() {
+        return "Contact [name=" + name + ", phoneNumber=" + phoneNumber + ", emailAddress=" + emailAddress + "]";
+    }
+
     public static void main(String[] args) {
         Contact contact1 = new Contact("nn", "0416789");
         Contact contact2 = new Contact("n1", new PhoneNumber(12, "46378643784"));
