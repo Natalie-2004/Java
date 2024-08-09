@@ -1,4 +1,4 @@
-package strategy;
+package strategy.payment;
 
 // step 2: create concrete method
 public class CreditCardPayment implements PaymentStrategy{

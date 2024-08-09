@@ -1,4 +1,4 @@
-package factory.phone_camera;
+package strategy.phone_camera;
 
 public class ShareBySocialMedia implements ShareStartegy {
 

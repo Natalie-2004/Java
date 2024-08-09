@@ -1,11 +1,10 @@
-package factory.phone_camera;
+package strategy.phone_camera;
 
-public class ShareByText implements ShareStartegy {
+public class ShareByEmail implements ShareStartegy {
 
     @Override
     public void share() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'share'");
     }
-    
 }

@@ -1,4 +1,4 @@
-package factory.phone_camera;
+package strategy.phone_camera;
 
 public abstract class PhoneCameraApp {
     private ShareStartegy shareStartegy;
@@ -21,13 +21,9 @@ public abstract class PhoneCameraApp {
 
     public abstract void edit();
 
-
-
     public ShareStartegy getShareStartegy() {
         return shareStartegy;
     }
-
-
 
     public void setShareStartegy(ShareStartegy shareStartegy) {
         this.shareStartegy = shareStartegy;
